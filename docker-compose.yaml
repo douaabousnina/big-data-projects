@@ -12,6 +12,7 @@ services:
       - "16010:16010"
     tty: true
     stdin_open: true
+    command: ["./start-hadoop.sh"]
 
   hadoop-worker1:
     image: liliasfaxi/hadoop-cluster:latest
